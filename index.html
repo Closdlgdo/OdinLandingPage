@@ -9,12 +9,12 @@
 <body>    
     <div class="section1">
         <div class="header">
-            <h1>This website is awsome</h1>
-            <h4>My landing page content</h4>
+            <h1>Welcome</h1>
+            <h4>My name is Carlos Delgado</h4>
         </div>
 
         <div class="sign-up">
-            <button type="button">Sign Up!</button>
+            <button type="button">Get in touch!</button>
         </div>
 
         <div class="logo">
@@ -30,13 +30,13 @@
             </nav>
         </div>
         <div class="image">
-            <img src="images/me.png" alt="image">
+            <img src="images/me.png" alt="Emojicon of Carlos Delgado">
         </div>
     </div>
 
-    <div class="section2">
-        <div class="randinfo">
-            <h2>Some Random info</h2>
+    <div class="portfolio">
+        <div class="about-projects">
+            <h2>Projects</h2>
         </div>
         <div class="box1">
         </div>
@@ -46,20 +46,52 @@
         </div>
     </div>
 
-    <div class="section3">
-        <h2>Some famous quote</h2>
+    <div class="about-me">
+        <h2>About Me!</h2>
+        <p>Hi, I'm Carlos and I recently graduated with a Bachelor's degree in Computer Science from Bellevue University. I have experience in Java, PHP, C++, HTML, CSS, a bit of JavaScript, MySQL, and MongoDB.</p>
+        <p>Aside from programming, I'm passionate about playing and watching soccer, as well as playing chess in my spare time. I'm also a proud parent to a ten-month-old son and I'm excited to be welcoming another child into the family soon.</p>
+        <p>When I'm not busy with work or family, you can find me hanging out with my pets - a cat and two dogs. Thank you for taking the time to learn a little bit about me. If you have any questions or want to chat further, please don't hesitate to reach out!</p>
     </div>
 
-    <div class="section4">
-        <div>
+    <div class="fcf-body">
+
+        <div id="fcf-form">
+        <h3 class="fcf-h3">Contact Me</h3>
+    
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+    
+            <div class="fcf-credit" id="fcf-credit">
+            Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
+            </div>
+    
+        </form>
         </div>
-        <div>
-        </div>
-        <div>
-        </div>
-        <div class="cta">
-            <button type="button">Sign Up!</button>
-        </div>
+    
     </div>
 
 
