@@ -1,8 +1,36 @@
 body {
     font-family: 'Roboto Mono', monospace;
+    color: #e3e3e3;
+    background-color: #000000; 
+    background-image: 
+    conic-gradient(
+        from 330deg at 50% 50%, 
+        #00435b 30deg, 
+        transparent 180deg),
+    conic-gradient(
+        from 150deg at 50% 50%, 
+        #0e4356 30deg, 
+        transparent 180deg),
+    conic-gradient(
+        from 150deg at 50% 50%, 
+        #284c5a 30deg, 
+        transparent 180deg),
+    conic-gradient(
+        from 150deg at 50% 50%, 
+        #4e6066 120deg, 
+        transparent 180deg);
+    background-size: 40rem 40rem;
 }
 
 img {
     width: 20%;
     height: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 10%;
 }
