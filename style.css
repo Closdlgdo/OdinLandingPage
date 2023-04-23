@@ -1,36 +1,92 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    color: #e3e3e3;
-    background-color: #000000; 
-    background-image: 
-    conic-gradient(
-        from 330deg at 50% 50%, 
-        #00435b 30deg, 
-        transparent 180deg),
-    conic-gradient(
-        from 150deg at 50% 50%, 
-        #0e4356 30deg, 
-        transparent 180deg),
-    conic-gradient(
-        from 150deg at 50% 50%, 
-        #284c5a 30deg, 
-        transparent 180deg),
-    conic-gradient(
-        from 150deg at 50% 50%, 
-        #4e6066 120deg, 
-        transparent 180deg);
-    background-size: 40rem 40rem;
+    color: #000000;
+    background-color: #fff8c5ba; 
+    background-size: auto auto;
 }
 
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+    padding-left: 30%;
+    padding-right: 70%;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 img {
-    width: 20%;
+    vertical-align: center;
+    max-width: 10%;
     height: auto;
+    margin-left: 60%;
+    padding: 0;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .navigation {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
