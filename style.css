@@ -1,8 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     color: #000000;
     background-color: #fff8c5ba; 
     background-size: auto auto;
+    margin: 1em
 }
 
 .section1 {
@@ -11,20 +16,13 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 20px;
-    padding-left: 30%;
-    padding-right: 70%;
+    flex: 1;
+    margin-right: 20px;
 }
 
 h1 {
@@ -33,40 +31,22 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 4em;
     font-weight: 700;
     text-align: center;
     margin: 0;
     padding: 0;
 }
-
-h3 {
-    font-size: 1.2em;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-h4 {
-    font-size: 1em;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-
 
 img {
-    vertical-align: center;
-    max-width: 10%;
+    flex: 0;
+    width: 55%;
     height: auto;
-    margin-left: 60%;
-    padding: 0;
+    border: 2px solid red;
 }
 
 .about-me {
@@ -76,8 +56,8 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
 }
 
 .navigation {
@@ -89,4 +69,12 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+p {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    padding-top: 50px;
 }
