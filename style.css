@@ -5,15 +5,34 @@
 body {
     font-family: 'Roboto Mono', monospace;
     color: #cbcbcb;
-    background-color: #2d2d2d; 
+    background: #15181c;
     background-size: auto auto;
     margin: 3em;
     border: 2px solid red;
+    animation: pulse 10s infinite;
 }
+
+@keyframes pulse {
+    0% {
+    background: #042e3e;
+    }
+    25% {
+        background: #4a798b;
+        }
+    50% {
+    background: #055a7b;
+    }
+    75% {
+        background: #4a798b;
+        }
+    100% {
+    background: #042e3e;
+    }
+}
+
 
 #logo{
     position: absolute;
-    background-color: #bbbbbb;
     top: 0;
     left: 0;
     width: 12%;
