@@ -4,20 +4,68 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-    color: #323232;
-    background-color: #fff9f9; 
+    color: #cbcbcb;
+    background-color: #2d2d2d; 
     background-size: auto auto;
-    margin: 1em;
+    margin: 3em;
     border: 2px solid red;
 }
+
+#logo{
+    position: absolute;
+    background-color: #bbbbbb;
+    top: 0;
+    left: 0;
+    width: 12%;
+    height: auto;
+    margin: 3em;
+    padding: .2em;
+    border: 2px solid red;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 20%;
+}
+
+.navigation a {
+    color: #cbcbcb;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+    transform: scale(1.5) !important;
+    color: #ffffff;
+}
+
 
 .section1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
-    padding-left: 15%;
+    margin-top: 3rem;
+    padding-left: 20%;
     padding-right: 5%;
     border: 2px solid red;
 }
@@ -28,7 +76,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 700;
     text-align: left;
     line-height: 1.3em;
@@ -39,20 +87,20 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
     text-align: center;
     line-height: 1.3em;
     letter-spacing: -0.04em;
-    margin: 0;
+    margin-top: 10%;
     padding: 0;
     border: 2px solid red;
 }
 
-img {
+#me {
     width: 40%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 22%;
     border: 2px solid red;
 }
 
@@ -63,20 +111,8 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-    border: 2px solid red;
-}
-
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    padding-left: 20%;
+    padding-right: 20%;
     border: 2px solid red;
 }
 
