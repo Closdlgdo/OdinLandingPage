@@ -3,29 +3,29 @@
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    color: #cbcbcb;
+    font-family: 'Caveat';
+    color: #dadada;
     background: #15181c;
     background-size: auto auto;
     margin: 1em;
-    animation: pulse 50s infinite;
+    animation: pulse 45s infinite;
 }
 
 @keyframes pulse {
     0% {
-    background: #042e3e;
+    background: #003a42;
     }
     25% {
-    background: #373d40;
+    background: #002f35;
     }
     50% {
-    background: #055a7b;
+    background: #001e22;
     }
     75% {
-    background: #373d40;
+    background: #002f35;
     }
     100% {
-    background: #042e3e;
+    background: #003a42;
     }
 }
 
@@ -33,10 +33,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 12%;
+    width: 15%;
     height: auto;
     margin: 1.5em;
     padding: .2em;
+    filter: hue-rotate(90deg);
 }
 
 .nav {
@@ -59,19 +60,21 @@ body {
 }
 
 .navigation a {
-    color: #cbcbcb;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     transition: all 0.2s ease-in-out;
 }
 
 .navigation a:hover {
     transform: scale(1.5) !important;
-    color: #ffffff;
+    color: #002f35;
 }
 
 .section1 {
@@ -110,8 +113,10 @@ body {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 700;
+    letter-spacing: 1em;
+    word-spacing: 0.3em;
     text-align: left;
     line-height: 1.3em;
     letter-spacing: -0.04em;
@@ -120,11 +125,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 400;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
     text-align: center;
     line-height: 1.3em;
-    letter-spacing: -0.04em;
     margin-top: 10%;
     padding: 0;
 }
@@ -132,7 +138,7 @@ h2 {
 #me {
     width: 40%;
     height: auto;
-    margin-left: 22%;
+    margin-left: 25%;
 }
 
 .about-me {
@@ -147,24 +153,27 @@ h2 {
 }
 
 p {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
+    letter-spacing: 0.02em;
+    word-spacing: 0.3em;
     line-height: 1.3em;
-    letter-spacing: -0.08em;
     text-align: left;
     margin: 0;
     padding-top: 30px;
 }
 
-#a {
-    display: inline-block;
+.square #a {
+    display: flex;
     transition: transform .2s !important;
-    width:30px;
-    height:30px;
+    width:1px;
+    height:10px;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-#a:hover {
-    transform: scale(2) !important;
+.square #a:hover {
+    transform: scale(1.5) !important;
 }
 
 .container {
@@ -172,13 +181,15 @@ p {
     margin: 0 auto;
     margin-top: 10%;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: #336167;
     border-radius: 5px;
 }
 
 .container h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
+    letter-spacing: 0.02em;
+    word-spacing: 0.2em;
     margin-bottom: 20px;
 }
 
@@ -202,7 +213,7 @@ p {
 
 .container button[type="submit"] {
     padding: 8px 15px;
-    background-color: #055a7b;
+    background-color: #002f35;
     color: #fff;
     border: none;
     border-radius: 2px;
@@ -217,17 +228,17 @@ p {
 .container textarea:focus,
 .container select:focus {
     outline: none;
-    border-color: #055a7b;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    border-color: #002f35;
+    box-shadow: 0 0 5px #002f35;
 }
 
 .container a {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Caveat';
     font-size: .6em;
-    color: #055a7b;
+    color: #002f35;
 }  
 .container a:hover {
-    color: #5b5b5b;
+    color: #ffffff;
 }
 
 ul {
@@ -237,7 +248,7 @@ ul {
 .social-media-icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; 
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -259,4 +270,64 @@ ul {
 
 .social-media-icons li img:hover {
     transform: scale(2) !important;
+}
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 25rem;
+    height: 25rem;
+    margin: 10% auto;
+}
+
+.square {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 70px;
+    line-height: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Alternate color for the squares */
+.square:nth-child(even) {
+    background-color: #98c8d0;
+}
+
+  /* Color for the remaining squares */
+.square:nth-child(odd) {
+    background-color: #5b848b;
+}
+
+.square:hover {
+    background-color: #b0b0b0;
+    color: #ffffff;
+}
+
+.square.selected {
+background-color: #ffcc00;
+color: #000000;
+}
+
+#king img {
+    display: flex;
+    align-items: center;
+    width: 70px; /* Adjust the width to the desired size */
+    height: auto;
+    cursor: move;
+    margin-left: 70%;
+}
+
+  /* Mobile Styles */
+@media (max-width: 320px) {
+.chessboard {
+    width: 60vw;
+    height: 60vw;
+    margin: 5vw;
+}
+
+.square {
+    font-size: 10vw;
+    line-height: 15vw;
+}
 }
