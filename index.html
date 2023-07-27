@@ -10,7 +10,9 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Roboto+Mono:wght@200;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Roboto+Slab:wght@400;500;700&family=Roboto:ital,wght@0,300;0,700;1,400&family=Source+Code+Pro:wght@200;400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
@@ -27,8 +29,11 @@
     </nav>
 </div>
 
-<div>
-    <img src="images/logo.png" alt="a logo of Carlos Delgado" id="logo">
+<div class="logo">
+    <video autoplay muted>
+        <source src="video/logo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 </div>
 
 <body>    
@@ -49,24 +54,6 @@
         <p>Hi, I am a recent graduate with a Bachelor's degree in Computer Science from Bellevue University.</p>
         <p>Aside from programming, I'm passionate about playing and watching soccer, as well as playing chess in my spare time. I'm also a proud father to a one-year-old son and I'm excited to be welcoming another son into the family soon.</p>
         <p>When I'm not busy with work or family, you can find me hanging out with my pets - a cat and two dogs. Thank you for taking the time to learn a little bit about me. If you have any questions or want to chat further, please don't hesitate to reach out!</p>
-        </div>
-
-        <h2>Projects...in the works</h2>
-        <div class="chessboard" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <div class="square" id="squareA" onclick="movePiece(this)"><i class="devicon-java-plain-wordmark colored"></i></div>
-            <div class="square" id="squareB" onclick="movePiece(this)"><i class="devicon-javascript-plain colored"></i></div>
-            <div class="square" id="squareC" onclick="movePiece(this)"><i class="devicon-cplusplus-plain-wordmark colored"></i></div>
-            <div class="square" id="squareD" onclick="movePiece(this)"><i class="devicon-php-plain colored"></i></div>
-            <div class="square" id="squareE" onclick="movePiece(this)"><i class="devicon-html5-plain-wordmark colored"></i></div>
-            <div class="square" id="squareF" onclick="movePiece(this)"><i class="devicon-css3-plain-wordmark colored"></i></div>
-            <div class="square" id="squareG" onclick="movePiece(this)"><i class="devicon-mysql-plain-wordmark colored"></i></div>
-            <div class="square" id="squareH" onclick="movePiece(this)"><i class="devicon-mongodb-plain-wordmark colored"></i></div>
-            <div class="square" id="squareI" onclick="movePiece(this)"><i class="devicon-git-plain-wordmark colored"></i></div>
-        </div>
-
-        <div id="king" draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
-            <i class="devicon-king-plain colored"></i>
-            <img src="images/king1.png" alt="King">
         </div>
 
 

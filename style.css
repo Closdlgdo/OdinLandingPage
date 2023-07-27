@@ -3,41 +3,25 @@
 }
 
 body {
-    font-family: 'Caveat';
+    font-family: 'fraunces';
     color: #dadada;
-    background: #15181c;
+    background: #0e424a;
     background-size: auto auto;
     margin: 1em;
     animation: pulse 45s infinite;
 }
 
-@keyframes pulse {
-    0% {
-    background: #003a42;
-    }
-    25% {
-    background: #002f35;
-    }
-    50% {
-    background: #001e22;
-    }
-    75% {
-    background: #002f35;
-    }
-    100% {
-    background: #003a42;
-    }
-}
-
-#logo {
+.logo {
+    max-width: 60px;
+    margin: 0 auto; /* Centers the container horizontally */
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: auto;
-    margin: 1.5em;
-    padding: .2em;
-    filter: hue-rotate(90deg);
+    top: 1em;
+    left: 1em;
+}
+  
+.logo video {
+    width: 100%; /* Make the video fill the container's width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .nav {
@@ -74,7 +58,7 @@ body {
 
 .navigation a:hover {
     transform: scale(1.5) !important;
-    color: #002f35;
+    color: #ffffff;
 }
 
 .section1 {
@@ -116,7 +100,7 @@ h1 {
     font-size: 4em;
     font-weight: 700;
     letter-spacing: 1em;
-    word-spacing: 0.3em;
+    word-spacing: 0.2em;
     text-align: left;
     line-height: 1.3em;
     letter-spacing: -0.04em;
@@ -127,7 +111,7 @@ h1 {
 h2 {
     font-size: 3em;
     font-weight: 400;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     word-spacing: 0.3em;
     text-align: center;
     line-height: 1.3em;
@@ -270,64 +254,4 @@ ul {
 
 .social-media-icons li img:hover {
     transform: scale(2) !important;
-}
-.chessboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
-    width: 25rem;
-    height: 25rem;
-    margin: 10% auto;
-}
-
-.square {
-    background-color: #f0f0f0;
-    text-align: center;
-    font-size: 70px;
-    line-height: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-/* Alternate color for the squares */
-.square:nth-child(even) {
-    background-color: #98c8d0;
-}
-
-  /* Color for the remaining squares */
-.square:nth-child(odd) {
-    background-color: #5b848b;
-}
-
-.square:hover {
-    background-color: #b0b0b0;
-    color: #ffffff;
-}
-
-.square.selected {
-background-color: #ffcc00;
-color: #000000;
-}
-
-#king img {
-    display: flex;
-    align-items: center;
-    width: 70px; /* Adjust the width to the desired size */
-    height: auto;
-    cursor: move;
-    margin-left: 70%;
-}
-
-  /* Mobile Styles */
-@media (max-width: 320px) {
-.chessboard {
-    width: 60vw;
-    height: 60vw;
-    margin: 5vw;
-}
-
-.square {
-    font-size: 10vw;
-    line-height: 15vw;
-}
 }
